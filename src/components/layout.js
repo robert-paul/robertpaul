@@ -31,12 +31,13 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h3
         style={{
-          fontFamily: `Montserrat, sans-serif`,
+          //fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
         }}
       >
         <Link
           style={{
+            fontFamily: 'inherit',
             boxShadow: `none`,
             color: `inherit`,
           }}
@@ -60,9 +61,9 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}, Built by Robert Paul with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org">Gatsby</a> and <a href="https://www.netlifycms.org/">Netlify CMS</a>.
       </footer>
     </div>
   )

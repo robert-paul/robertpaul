@@ -5,7 +5,18 @@ Wordpress2016.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
+      fontFamily: "inherit",
     },
+    'h1': {
+      fontFamily: "inherit",
+    },
+    'a': {
+      fontFamily: "inherit",
+    },
+    'h3': {
+      fontFamily: "inherit",
+      fontWeight: "600",
+    }
   }
 }
 
